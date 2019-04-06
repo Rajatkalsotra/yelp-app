@@ -8,7 +8,7 @@ Register account to create a campground or comment.
 Install all the packages in file package.json by using. :
 
 
-  npm install <packages names>
+  npm install (packages names)
   
 Run app.js by.:
 
