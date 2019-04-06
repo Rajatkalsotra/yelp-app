@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+<div class="container">
+		<h1>CREATE NEW GROUND</h1>
+		<form action="/grounds" method="POST">
+			<input class="form-control" type="text" name="name" placeholder="Name">
+			<input class="form-control" type="text" name="image" placeholder="Image url">
+			<input class="form-control" type="number" name="price" placeholder="Price" min="0.01" step="0.01">
+			<textarea class="form-control"  name="description" placeholder="Description"></textarea>
+			<button class="btn btn-light">Submit</button>
+		</form>
+	<a href="/grounds">Go back</a>
+</div>
+<% include ../partials/footer %>

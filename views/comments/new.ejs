@@ -1,0 +1,10 @@
+<% include ../partials/header %>
+<div class="container">
+		<h1>ADD NEW COMMENT</h1>
+		<form action="/grounds/<%= ground._id %>/comments" method="POST">
+			<textarea class="form-control"  name="comment[text]" placeholder="Comment"></textarea>
+			<button class="btn btn-light">Submit</button>
+		</form>
+	<a href="/grounds/<%= ground._id %>">Go back</a>
+</div>
+<% include ../partials/footer %>

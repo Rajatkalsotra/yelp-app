@@ -1,0 +1,15 @@
+.img-thumbnail img{
+	width:100%;
+}
+.delete{
+	display:inline;
+}
+.btn{
+	margin-bottom:10px;
+}
+input{
+	margin: 8px auto;
+}
+textarea{
+	margin: 8px auto;
+}

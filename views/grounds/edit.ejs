@@ -1,0 +1,13 @@
+<% include ../partials/header %>
+<div class="container">
+		<h1>EDIT <%= ground.name %></h1>
+		<form action="/grounds/<%= ground._id %>?_method=PUT" method="POST">
+			<input class="form-control" type="text" name="ground[name]" value="<%= ground['name'] %>" placeholder="Name">
+			<input class="form-control" type="text" name="ground[image]" value="<%= ground['image'] %>">
+			<input class="form-control" type="number" name="ground[price]" value="<%= ground['Price'] %>" min="0.01" step="0.01">
+			<textarea class="form-control"  name="ground[description]"><%= ground['description'] %></textarea>
+			<button class="btn btn-light">Submit</button>
+		</form>
+	<a href="/grounds">Go back</a>
+</div>
+<% include ../partials/footer %>

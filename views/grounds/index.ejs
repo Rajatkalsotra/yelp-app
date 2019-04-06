@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>Welcome to Grounds page</h1>
+			<p>Look for the best</p>
+			<a class="btn btn-primary btn-lg" href="/grounds/new">Add new</a>
+		</div>
+	</header>
+	<div class="row text-center">
+		<% grounds.forEach(function(ground){ %>
+			<div class="col-md-3 col-sm-6">			
+				<div class="figure-caption">
+					<img class="img-thumbnail" src="<%= ground.image %>">
+					<h4><%= ground.name %></h4>
+				</div>
+				<a href="/grounds/<%= ground._id %>" class="btn btn-primary">More info</a>
+			</div>
+		<% }) %>
+	</div>
+</div>
+
+
+
+
+<% include ../partials/footer %>

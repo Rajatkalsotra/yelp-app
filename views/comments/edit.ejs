@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+<div class="container">
+		<h1>EDIT COMMENT</h1>
+		<form action="/grounds/<%= groundId %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+			<textarea class="form-control"  name="comment[text]" ><%= comment.text %></textarea>
+			<button class="btn btn-light">Submit</button>
+		</form>
+	<a href="/grounds/<%= groundId %>">Go back</a>
+</div>
+
+<% include ../partials/footer %>
