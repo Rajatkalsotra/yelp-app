@@ -1,16 +1,12 @@
-# yelp-app
-View or create camping grounds.
-Add comments.
-Upload Image url.
-Register account to create a campground or comment.
+# Camping grounds app
+This site lets you create campgrounds.It is built using nodejs,mongodb,express and hosted on heroku.
 
-# Using yelp-camp
-Install all the packages in file package.json by using. :
+## Using this app
 
+ - Install all the packages in file package.json by using. :
 
-  npm install (packages names)
-  
-Run app.js by.:
+` npm install (packages names) `
 
-  node app.js
-  
+## Run app.js by.:
+
+` node app.js `
